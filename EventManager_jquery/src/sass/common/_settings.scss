@@ -1,0 +1,33 @@
+html {
+  scroll-behavior: smooth;
+  color: $black;
+  font-size: 12px;
+}
+.btn {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: "OpenSans-Regular", "Arial", sans-serif;
+  color: $white;
+  text-transform: uppercase;
+  padding: 2rem 4.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: $btn;
+  border-radius: 10px;
+  outline: none;
+  transition: $tr;
+  &:hover {
+    background-color: $btn_hov;
+  }
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}

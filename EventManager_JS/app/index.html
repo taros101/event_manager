@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h3>Добавить мероприятие</h3>
+    <div class="formBlock">
+
+      <form action="" method="post" name="test" id="form">
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="name">Название:</label>
+            <input type="text" class="form-control" name="name" placeholder="Название мероприятия" id="name">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="date">Дата:</label>
+            <input type="date" class="form-control" name="date" id="date">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="starttime">Время начала:</label>
+            <input type="time" class="form-control" name="starttime" min="09:00:00" max="17:00:00" id="starttime">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="finishtime">Время конца:</label>
+            <input type="time" class="form-control" name="finishtime" min="09:00:00" max="17:00:00" id="finishtime">
+          </div>
+          <input type="button" name="submit" value="Добавить" id="btn">
+        </div>
+      </form>
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        <span id="alertText"></span>
+      </div>
+    </div>
+
+
+
+    <div id="selectBlock"></div>
+
+    <div class="row" id="cardGrid">
+    </div>
+  </div>
+  <script defer src="/font-awesome/all.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

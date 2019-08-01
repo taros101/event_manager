@@ -1,0 +1,93 @@
+h3 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.card {
+  margin: 1rem 0;
+  &-title {
+    margin: 0;
+  }
+  &-body {
+    padding: 0;
+  }
+}
+
+.list-group-flush {
+  padding: 0;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem .75rem;
+}
+
+#btn {
+  background-color: #FF2A00;
+  margin: 0 auto;
+  padding: 6px 28px;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #E10000;
+  }
+}
+
+.nameBlock {
+  display: block;
+  flex-grow: 1;
+}
+
+.startTimeBlock,
+.finishTimeBlock {
+  display: block;
+  padding: 0 5px;
+}
+
+button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#btn, button:active, button:focus {
+  outline: none;
+}
+
+#selectBlock {
+  padding: 25px 0 10px;
+}
+
+.inputName {
+  width: 100%;
+}
+
+.inputName,
+.inputStartTime,
+.inputFinishTime {
+  display: none;
+}
+
+li.editMode .inputName ,
+li.editMode .inputStartTime,
+li.editMode .inputFinishTime {
+  display: block;
+}
+
+li.editMode .nameBlock ,
+li.editMode .startTimeBlock,
+li.editMode .finishTimeBlock {
+  display: none;
+}
+
+.alert {
+  display: none;
+  margin: 1rem 0;
+}
